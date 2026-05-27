@@ -28,7 +28,7 @@ const caseStudies: CaseStudy[] = [
     process: 'Product input → AI content direction → Video production → Platform adaptation',
     output: 'Series of short-form videos optimized for TikTok, Instagram Reels, and YouTube Shorts',
     learning: 'AI tools accelerate ideation and script drafting, but human judgment remains essential for tone calibration and brand fit.',
-    images: ['/Case01_01A.jpg', '/Case01_02.jpeg', '/Case01_03.jpeg'],
+    images: ['Case01_01A.jpg', 'Case01_02.jpeg', 'Case01_03.jpeg'],
   },
   {
     id: 2,
@@ -39,7 +39,7 @@ const caseStudies: CaseStudy[] = [
     process: 'Product information → Visual concept → Content creation → Multi-format export',
     output: 'Complete visual asset library with platform-specific versions',
     learning: 'Starting with product value propositions rather than features improves content relevance across all touchpoints.',
-    images: ['/Case02_01.jpg', '/Case02_02.jpeg', '/Case02_03.jpeg'],
+    images: ['Case02_01.jpg', 'Case02_02.jpeg', 'Case02_03.jpeg'],
   },
   {
     id: 3,
@@ -50,7 +50,7 @@ const caseStudies: CaseStudy[] = [
     process: 'Concept → Capture → Edit → Review → Publish',
     output: 'Standardized template library and editing workflow documentation',
     learning: 'Mobile video tools have matured enough for professional output when paired with proper planning and templates.',
-    images: ['/Case03_01.jpg', '/Case03_02.jpg', '/Case03_03.jpg'],
+    images: ['Case03_01.jpg', 'Case03_02.jpg', 'Case03_03.jpg'],
   },
   {
     id: 4,
@@ -61,7 +61,7 @@ const caseStudies: CaseStudy[] = [
     process: 'Core content → Platform analysis → Adaptation → Scheduling',
     output: 'Content calendar with platform-optimized versions',
     learning: 'Platform-specific adaptation beats cross-posting. Each platform has distinct language, timing, and format preferences.',
-    images: ['/Case04_01.jpg', '/Case04_02.jpg', '/Case04_03.jpg'],
+    images: ['Case04_01.jpg', 'Case04_02.jpg', 'Case04_03.jpg'],
   },
   {
     id: 5,
