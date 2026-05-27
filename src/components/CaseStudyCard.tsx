@@ -96,7 +96,7 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
             <>
               <button
                 onClick={prevImage}
-                className="absolute left-2 md:left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/50 backdrop-blur-sm flex items-center justify-center hover:bg-white transition-colors shadow-sm border border-border"
+                className="absolute left-2 md:left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/30 backdrop-blur-[1px] flex items-center justify-center hover:bg-white transition-colors shadow-sm border border-border"
               >
                 <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -105,7 +105,7 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
 
               <button
                 onClick={nextImage}
-                className="absolute right-2 md:right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/50 backdrop-blur-sm flex items-center justify-center hover:bg-white transition-colors shadow-sm border border-border"
+                className="absolute right-2 md:right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/30 backdrop-blur-[1px] flex items-center justify-center hover:bg-white transition-colors shadow-sm border border-border"
               >
                 <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
