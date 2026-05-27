@@ -65,9 +65,9 @@ const caseStudies: CaseStudy[] = [
   },
   {
     id: 5,
-    title: 'E-commerce Growth & Content Distribution',
+    title: 'Content Growth System',
     context: 'Manual content creation was creating bottlenecks in the marketing workflow.',
-    goal: 'Design an automated pipeline that transforms product information into social-ready content drafts.',
+    goal: 'I design practical content-to-conversion growth workflows for SME and early-stage brands — connecting content, distribution, conversion, and data into structured systems built for small teams to execute and iterate.',
     tools: ['Python', 'AI Workflow', 'E-commerce', 'Social Media'],
     process: 'Product data → Python processing → AI drafting → Human review → Publish',
     output: 'Automated content draft generation system',

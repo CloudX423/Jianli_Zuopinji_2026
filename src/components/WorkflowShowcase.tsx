@@ -4,48 +4,53 @@ import { motion, AnimatePresence } from 'framer-motion';
 const workflowSteps = [
   {
     label: "01 / Discover",
-    title: "Discover demand signals before choosing the content angle, then compare them before turning product value into a clear content direction.",
+    title: "Identify demand signals early to reduce creative guesswork and improve content decisions.",
     execution: [
-      "OpenClaw for recurring research briefs and source collection.",
-      "Google Trends, TikTok Creative Center, Meta Ad Library, and marketplace reviews."
+      "Monitor emerging topics and audience discussions with OpenClaw",
+      "Validate demand through Google Trends, TikTok Creative Center, Meta Ad Library, and marketplace reviews",
+      "Prioritize signals by repetition, engagement intensity, and commercial intent"
     ],
-    deliverables: ["Trend notes", "Pain points", "Content angles"]
+    deliverables: ["Ranked demand opportunities", "Verified audience pain points", "Testable content angles"]
   },
   {
     label: "02 / Create",
-    title: "One product message needs different creative expressions.",
+    title: "Turn one product message into multiple creative hypotheses for testing.",
     execution: [
-      "Build hooks, captions, short scripts, image sets, and video structures.",
-      "Use AI-assisted drafts while keeping tone, clarity, and commercial judgement human."
+      "Break product value into messaging angles: hook, problem, outcome, and proof",
+      "Generate creative variants across scripts, visuals, and narrative structures",
+      "Use AI for iteration speed, while manually filtering for clarity, positioning, and intent"
     ],
-    deliverables: ["Short-form scripts", "Visual content variants", "Platform-native assets"]
+    deliverables: ["Hypothesis-based scripts", "Multi-variant creative tests", "Platform-ready assets"]
   },
   {
     label: "03 / Distribute",
-    title: "Distribution turns content from assets into market presence.",
+    title: "Test content across platforms instead of simply publishing it.",
     execution: [
-      "Adapt assets for TikTok, Instagram, Facebook, Pinterest, Shopify, Amazon, or landing pages.",
-      "Prepare organic posts, paid creative tests, and e-commerce content blocks."
+      "Adapt content into native formats for TikTok, Instagram, Facebook, Pinterest, Shopify, and Amazon using structured distribution workflows",
+      "Run organic distribution and paid creative tests in parallel",
+      "Adjust format and framing based on platform behavior and early engagement signals"
     ],
-    deliverables: ["Publishing plan", "Platform-specific posts", "Paid and organic test assets"]
+    deliverables: ["Multi-platform distribution plan", "Organic + paid test sets", "Platform-optimized variants"]
   },
   {
     label: "04 / Convert",
-    title: "Content should create a next action, not only attention.",
+    title: "Design content with clear conversion paths, not just engagement goals.",
     execution: [
-      "Connect posts to landing pages, inquiry forms, DMs, CRM lists, and retargeting audiences.",
-      "Design follow-up flows for leads, repeat buyers, or warm audiences."
+      "Connect content to landing pages, DM flows, email capture, and CRM follow-up",
+      "Segment audiences by engagement signals and purchase intent",
+      "Build follow-up flows for retargeting, nurturing, and repeat purchase behavior"
     ],
-    deliverables: ["Inbound lead paths", "Customer segments", "Follow-up flows"]
+    deliverables: ["Conversion paths", "Audience segments", "Retargeting and follow-up flows"]
   },
   {
     label: "05 / Optimize",
-    title: "Performance data should shape the next creative decision.",
+    title: "Use performance data to decide what to scale, refine, or stop.",
     execution: [
-      "Review views, clicks, saves, comments, conversion signals, CAC, and audience response.",
-      "Compare content angles and decide what to repeat, refresh, pause, or test next."
+      "Track views, retention, engagement depth, CTR, conversions, and CAC",
+      "Compare creative variants by message angle, not just by post",
+      "Feed winning patterns into the next content cycle"
     ],
-    deliverables: ["Improved hooks", "Better targeting notes", "Next experiment priorities"]
+    deliverables: ["Validated creative patterns", "Performance-based targeting insights", "Next test priorities"]
   }
 ];
 
@@ -170,7 +175,7 @@ export default function WorkflowShowcase() {
         style={{
           background: `linear-gradient(135deg, rgba(49, 92, 255, 0.18), transparent 32%), linear-gradient(315deg, rgba(155, 225, 93, 0.18), transparent 28%), var(--panel)`,
           border: '1px solid rgba(18, 20, 23, 0.22)',
-          boxShadow: '0 28px 90px rgba(18, 20, 23, 0.28)'
+          boxShadow: '0 14px 45px rgba(18, 20, 23, 0.14)'
         }}
       >
         {/* Background pattern overlay */}

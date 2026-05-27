@@ -152,11 +152,13 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
           {caseStudy.goal}
         </p>
 
-        <div className="flex flex-wrap gap-2">
-          {caseStudy.tools.map((tool) => (
-            <Tag key={tool} label={tool} />
-          ))}
-        </div>
+        {!showWorkflow && (
+          <div className="flex flex-wrap gap-2">
+            {caseStudy.tools.map((tool) => (
+              <Tag key={tool} label={tool} />
+            ))}
+          </div>
+        )}
       </div>
     </motion.article>
   );
