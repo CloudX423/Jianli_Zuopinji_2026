@@ -185,8 +185,8 @@ export default function WorkflowShowcase() {
           WebkitMaskImage: 'linear-gradient(180deg, black, transparent 82%)'
         }} />
 
-        {/* Top labels */}
-        <div className="relative z-10 grid grid-cols-5 gap-3.5 px-2 text-[0.68rem] font-black uppercase text-white/[0.46]">
+        {/* Top labels - hidden on mobile */}
+        <div className="relative z-10 hidden md:grid md:grid-cols-5 gap-3.5 px-2 text-[0.68rem] font-black uppercase text-white/[0.46]">
           <span>Signal</span>
           <span>Content</span>
           <span>Channel</span>
@@ -194,8 +194,33 @@ export default function WorkflowShowcase() {
           <span>Learning</span>
         </div>
 
-        {/* Stage rail */}
-        <div className="relative z-10 grid grid-cols-5 gap-2.5 pb-8">
+        {/* Mobile stage buttons */}
+        <div className="relative z-10 flex justify-center items-center gap-3 pb-6 md:hidden">
+          {workflowSteps.map((_, index) => {
+            const colors = ['#9be15d', '#f2c14e', '#ff6b4a', '#8b5cf6', '#315cff'];
+            const color = colors[index];
+            return (
+              <button
+                key={index}
+                onClick={() => handleStageClick(index)}
+                className={`
+                  w-9 h-9 rounded-full flex items-center justify-center
+                  text-sm font-bold transition-all duration-200
+                  ${index === activeIndex
+                    ? 'bg-white text-[#121417] shadow-lg scale-110'
+                    : 'bg-white/10 text-white/60 hover:bg-white/20'
+                  }
+                `}
+                style={index === activeIndex ? { backgroundColor: color } : {}}
+              >
+                {String(index + 1).padStart(2, '0')}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Desktop stage rail - hidden on mobile */}
+        <div className="relative z-10 hidden md:grid md:grid-cols-5 gap-2.5 pb-8">
           {/* Progress bar */}
           <div className="absolute right-8 left-8 bottom-3 h-1 rounded-full" style={{
             background: `linear-gradient(90deg, var(--green) 0 ${activeIndex * 25}%, rgba(255, 255, 255, 0.14) ${activeIndex * 25}% 100%)`,
@@ -229,7 +254,7 @@ export default function WorkflowShowcase() {
             initial={{ opacity: 0.42, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.22, ease: "easeOut" }}
-            className="relative z-10 grid grid-cols-1 gap-5.5 items-start min-h-[300px] p-4 md:p-8 overflow-hidden rounded-lg"
+            className="relative z-10 grid grid-cols-1 gap-5.5 items-start min-h-[220px] md:min-h-[300px] p-4 md:p-8 overflow-hidden rounded-lg"
             style={{
               background: `linear-gradient(135deg, rgba(255, 253, 250, 0.96), rgba(255, 253, 250, 0.84)), var(--white)`,
               border: '1px solid rgba(255, 255, 255, 0.52)'
@@ -265,7 +290,7 @@ export default function WorkflowShowcase() {
                 <span className="text-[#315cff] text-[0.74rem] font-black uppercase tracking-normal">
                   Deliverables
                 </span>
-                <div className="grid grid-cols-3 gap-1.5">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-1.5">
                   {activeStep.deliverables.map((item, i) => (
                     <p key={i} className="flex items-center justify-center gap-3 min-h-8 py-1.5 px-2.5 text-center text-[0.8rem] font-bold text-[#121417] bg-white/[0.8] border border-black/[0.08] rounded-lg">
                       {item}
@@ -274,7 +299,7 @@ export default function WorkflowShowcase() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-[1.1fr_0.7fr_1.4fr_0.92fr] gap-1.75 h-2.25">
+              <div className="hidden md:grid md:grid-cols-[1.1fr_0.7fr_1.4fr_0.92fr] gap-1.75 h-2.25">
                 {[0, 1, 2, 3].map((i) => (
                   <span key={i} className="block rounded-full" style={{
                     background: 'linear-gradient(90deg, var(--blue), var(--green))',
@@ -287,7 +312,7 @@ export default function WorkflowShowcase() {
         </AnimatePresence>
 
         {/* Loop thread SVG */}
-        <svg className="absolute right-5.5 bottom-4 left-5.5 z-0 w-[calc(100%-44px)] h-30 pointer-events-none" viewBox="0 0 1120 190" preserveAspectRatio="none" aria-hidden="true">
+        <svg className="absolute right-5.5 bottom-4 left-5.5 z-0 w-[calc(100%-44px)] h-30 pointer-events-none hidden md:block" viewBox="0 0 1120 190" preserveAspectRatio="none" aria-hidden="true">
           <path className="thread-base" d="M1030 22 C1110 168 120 170 88 42" fill="none" stroke="rgba(255, 255, 255, 0.1)" strokeLinecap="round" strokeWidth="3" />
           <path d="M1030 22 C1110 168 120 170 88 42" fill="none" stroke="#9be15d" strokeLinecap="round" strokeWidth="3" style={{
             strokeDasharray: '44 660',
