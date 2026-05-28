@@ -24,7 +24,7 @@ const caseStudies: CaseStudy[] = [
     title: 'AI Content Automation Workflow',
     context: 'E-commerce brand needed to scale video content production across multiple social platforms while maintaining consistency.',
     goal: 'Built an AI-driven content automation system that transforms publicly available video data into multi-platform-ready content (video, image, and text) through API-based sourcing and structured workflows, significantly improving content production efficiency and scalability.',
-    tools: ['Python', 'API integration', 'AI automation workflows', 'CapCut', 'Photoshop'],
+    tools: ['API integration', 'AI automation workflows', 'CapCut', 'Photoshop'],
     process: 'Product input → AI content direction → Video production → Platform adaptation',
     output: 'Series of short-form videos optimized for TikTok, Instagram Reels, and YouTube Shorts',
     learning: 'AI tools accelerate ideation and script drafting, but human judgment remains essential for tone calibration and brand fit.',
