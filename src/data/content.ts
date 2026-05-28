@@ -67,7 +67,7 @@ const caseStudies: CaseStudy[] = [
     id: 5,
     title: 'Content Growth System',
     context: 'Manual content creation was creating bottlenecks in the marketing workflow.',
-    goal: 'I design practical content-to-conversion growth workflows for SME and early-stage brands — connecting content, distribution, conversion, and data into structured systems built for small teams to execute and iterate.',
+    goal: 'I design practical content-to-conversion growth workflows for SME and early-stage brands — connecting content, distribution, conversion, and data into structured systems that enable scalable execution and continuous improvement.',
     tools: ['Python', 'AI Workflow', 'E-commerce', 'Social Media'],
     process: 'Product data → Python processing → AI drafting → Human review → Publish',
     output: 'Automated content draft generation system',
