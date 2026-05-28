@@ -195,28 +195,33 @@ export default function WorkflowShowcase() {
         </div>
 
         {/* Mobile stage buttons */}
-        <div className="relative z-10 flex justify-center items-center gap-3 pb-6 md:hidden">
-          {workflowSteps.map((_, index) => {
-            const colors = ['#9be15d', '#f2c14e', '#ff6b4a', '#8b5cf6', '#315cff'];
-            const color = colors[index];
-            return (
-              <button
-                key={index}
-                onClick={() => handleStageClick(index)}
-                className={`
-                  w-9 h-9 rounded-full flex items-center justify-center
-                  text-sm font-bold transition-all duration-200
-                  ${index === activeIndex
-                    ? 'bg-white text-[#121417] shadow-lg scale-110'
-                    : 'bg-white/10 text-white/60 hover:bg-white/20'
-                  }
-                `}
-                style={index === activeIndex ? { backgroundColor: color } : {}}
-              >
-                {String(index + 1).padStart(2, '0')}
-              </button>
-            );
-          })}
+        <div className="relative z-10 flex flex-col items-center justify-center gap-3 pb-6 md:hidden">
+          <div className="flex justify-center items-center gap-3">
+            {workflowSteps.map((_, index) => {
+              const colors = ['#9be15d', '#f2c14e', '#ff6b4a', '#8b5cf6', '#315cff'];
+              const color = colors[index];
+              return (
+                <button
+                  key={index}
+                  onClick={() => handleStageClick(index)}
+                  className={`
+                    w-9 h-9 rounded-full flex items-center justify-center
+                    text-sm font-bold transition-all duration-200
+                    ${index === activeIndex
+                      ? 'bg-white text-[#121417] shadow-lg scale-110'
+                      : 'bg-white/10 text-white/60 hover:bg-white/20'
+                    }
+                  `}
+                  style={index === activeIndex ? { backgroundColor: color } : {}}
+                >
+                  {String(index + 1).padStart(2, '0')}
+                </button>
+              );
+            })}
+          </div>
+          <p className="text-white/70 text-xs font-semibold text-center mt-1.5">
+            {workflowSteps[activeIndex].label.split(' / ')[1]}
+          </p>
         </div>
 
         {/* Desktop stage rail - hidden on mobile */}
@@ -260,7 +265,7 @@ export default function WorkflowShowcase() {
               border: '1px solid rgba(255, 255, 255, 0.52)'
             }}
           >
-            <div className="absolute top-5 right-5.5 h-px" style={{
+            <div className="hidden md:block absolute top-5 right-5.5 h-px" style={{
               width: 'min(30vw, 310px)',
               background: 'linear-gradient(90deg, transparent, rgba(18, 20, 23, 0.28))'
             }} />
