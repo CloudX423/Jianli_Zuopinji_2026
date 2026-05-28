@@ -1,7 +1,7 @@
 const hero = {
   name: 'Cloud Xia',
   title: 'Digital Media Specialist',
-  tagline: 'E-commerce Social Media Content & AI-assisted Marketing Workflows',
+  tagline: 'Digital Content | AI Workflows | Growth Marketing',
   supporting: 'Building e-commerce social media content through AI-assisted production workflows, digital media creation, and performance-aware marketing thinking.',
 };
 
