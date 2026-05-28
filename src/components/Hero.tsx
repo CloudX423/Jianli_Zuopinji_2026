@@ -3,7 +3,7 @@ import { hero } from '../data/content';
 
 export default function Hero() {
   return (
-    <section className="min-h-[40vh] flex items-center justify-center px-6 py-12 relative overflow-hidden">
+    <section className="min-h-[40vh] flex items-center justify-center px-6 py-11 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-teal-50 via-white to-slate-50" />
       
       {/* Cloud patterns */}
@@ -34,15 +34,6 @@ export default function Hero() {
       <div className="absolute top-20 right-20 w-96 h-96 bg-teal-100 rounded-full blur-3xl opacity-30" />
       
       <div className="relative z-10 max-w-4xl mx-auto text-center">
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-accent font-medium tracking-wide uppercase text-base mb-6"
-        >
-          Portfolio
-        </motion.p>
-        
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
