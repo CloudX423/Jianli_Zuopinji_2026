@@ -3,7 +3,7 @@ import { hero } from '../data/content';
 
 export default function Hero() {
   return (
-    <section className="min-h-[40vh] flex items-center justify-center px-6 py-11 relative overflow-hidden">
+    <section className="min-h-[40vh] flex items-center justify-center px-6 py-10 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-teal-50 via-white to-slate-50" />
       
       {/* Cloud patterns */}
