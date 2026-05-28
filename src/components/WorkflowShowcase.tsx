@@ -195,7 +195,7 @@ export default function WorkflowShowcase() {
         </div>
 
         {/* Mobile stage buttons */}
-        <div className="relative z-10 flex flex-col items-center justify-center gap-3 pb-6 md:hidden">
+        <div className="relative z-10 flex flex-col items-center justify-center gap-3 pb-4 md:hidden">
           <div className="flex justify-center items-center gap-3">
             {workflowSteps.map((_, index) => {
               const colors = ['#9be15d', '#f2c14e', '#ff6b4a', '#8b5cf6', '#315cff'];
@@ -219,7 +219,7 @@ export default function WorkflowShowcase() {
               );
             })}
           </div>
-          <p className="text-white/70 text-xs font-semibold text-center mt-1.5">
+          <p className="text-white/70 text-sm font-semibold text-center mt-1.5">
             {workflowSteps[activeIndex].label.split(' / ')[1]}
           </p>
         </div>
